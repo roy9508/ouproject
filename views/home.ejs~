@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <h1>Restaurants</h1>	
+</head>
+  <body>
+  <h1>Your name:   <%= user %></h1>
+	<div class="w3-container">
+	<a href="/new" style="text-decoration: none">
+	    <button class="w3-btn">New</button>
+	</a>
+        <a href="/search" style="text-decoration: none">
+	    <button class="w3-btn">Search</button>
+	</a>
+	<a href="/logout" style="text-decoration: none">
+	    <button class="w3-btn">logout</button>
+	</a>
+	</div>
+	<H1>Showing <%= r.length %> Restaurants</H1>
+<div class="w3-container">
+  <ul class="w3-ul w3-large">
+ 
+  <% r.forEach(function(restaurants) { %>
+  <li><a href=/read?id=<%= restaurants._id %>><%= restaurants.name %></a></li>
+  <% });                        %>
+
+  
+  </ul>
+</div>
+<p>
+    </p>
+  </body>
+</html>

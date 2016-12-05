@@ -1,0 +1,9 @@
+<html><head><title>Rate restaurant</title></head>
+<body><h1>Rate</h1>
+<p>You can choose 1-10<p>
+<form method="GET" action="http://localhost:8099/rate">
+Rate
+<input type="number" name="score" min="0" max="10" step="1" value="1">
+<input type="hidden" name="id" value="<%=id%>">'
+<input type="submit">'
+</form></body></html>'

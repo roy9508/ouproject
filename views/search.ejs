@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Search</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <h1>Search result</h1>	
+</head>
+  <body>
+	<div class="w3-container">
+	<a href="/search" style="text-decoration: none">
+	    <button class="w3-btn">Back</button>
+	</a>
+	</div>
+	<H1>Showing <%= s.length %> Restaurants</H1>
+<div class="w3-container">
+  <ul class="w3-ul w3-large">
+ 
+  <% s.forEach(function(searchs) { %>
+  <li><a href=/read?id=<%= searchs._id %>><%= searchs.name %></a></li>
+  <% });                        %>
+
+  
+  </ul>
+</div>
+<p>
+    </p>
+  </body>
+</html>

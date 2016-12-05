@@ -1,0 +1,18 @@
+{
+    "name": "server",
+    "description": "NodeJS Session",
+    "author": "Kim and Paul",
+    "version": "0.0.1",
+    "dependencies": {
+        "mongodb": "*",
+        "express": "*",
+        "assert": "*",
+        "ejs": "*",
+        "express-session": "*",
+        "body-parser": "*",
+        "express-fileupload": "*",
+	"cookie-session": "*"
+    },
+    "engine": "node >= 0.10.0",
+    "scripts": {"start": "node server"}
+}

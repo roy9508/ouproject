@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=Big5">
+<title>Create New Restaurant</title>
+</head>
+<body>
+
+<form action="/change" method='post'
+            encType="multipart/form-data">
+	<h3>Name</h3><input type="text" name="name" value="<%=name%>"><br>
+        <h3>Borough: <h3/><input type="text" name="borough" value="<%=borough%>"><br>
+        <h3>Cuisine</h3><input type="text" name="cuisine" value="<%=cuisine%>"><br>
+        <h3>Street: <h3/><input type="text" name="street" value="<%=street%>"><br>
+	<h3>Building: <h3/><input type="text" name="building" value="<%=building%>"><br>
+	<h3>Zipcode:</h3> <input type="text" name="zipcode" value="<%=zipcode%>"><br>
+	<h3>Latitude: <h3><input type="text" name="lat" value="<%=lat%>"><br>
+        <h3>Longitude:<h3> <input type="text" name="lon" value="<%=lon%>"><br>
+	<h2>Other Info</h2>
+	<h3>Photo: <h3><input type="file" name="sampleFile" />
+        <input type="hidden" name="id" value="<%=id%>">
+	<br>
+	<input type="submit" value="Edit">
+        <br>
+        <a href="javascript:history.back()">Go Back</a>
+</form>
+
+
+
+</body></html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <h1>Search</h1>	
+</head>
+<body>
+<div class="form-container">
+ 
+    <form method="post" action="/search">
+	    <div class="w3-container">
+            <label for="name">name:</label>
+            <input type="text" name="name" id="name" value="" class="form-control" />
+	    <br><br>
+	    <label for="borough">borough:</label>
+            <input type="text" name="borough" id="borough" value="" class="form-control" />
+	    <br><br>
+	    <label for="cuisine">cuisine:</label>
+            <input type="text" name="cuisine" id="cuisine" value="" class="form-control" />
+	    <br><br>
+            <button type="submit" class="btn btn-primary">Search</button>
+	    </div>
+	    <br><br>
+    </form>
+	<a href="/home" style="text-decoration: none">Back</a>
+</div>
+</body>
+</html>

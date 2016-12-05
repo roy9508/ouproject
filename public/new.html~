@@ -1,0 +1,27 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=Big5">
+<title>Create New Restaurant</title>
+</head>
+<body>
+<h1>Create New Restaurant</h1>
+<form action="/create" method='post'
+            encType="multipart/form-data">
+	<h3>Name</h3><input type="text" name="name"><br>
+        <h3>Borough</h3><input type="text" name="borough"><br>
+        <h3>Cuisine</h3><input type="text" name="cuisine"><br>
+        <h3>Street: <h3/><input type="text" name="street"><br>
+	<h3>Building: <h3/><input type="text" name="building"><br>
+	
+	<h3>Zipcode:</h3> <input type="text" name="zipcode"><br>
+	<h3>Latitude:<h3> <input type="text" name="lat"><br>
+	<h3>Longitude:<h3><input type="text" name="lon"><br>
+
+	<h2>Other Info</h2>
+	<h3>Photo: <h3><input type="file" name="sampleFile" />
+	<br>
+	<input type="submit" value="Create">
+</form>
+
+
+
+</body></html>
